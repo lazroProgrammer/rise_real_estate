@@ -16,45 +16,40 @@ class Onboarding1 extends StatelessWidget {
           padding: const EdgeInsets.all(16.0),
           child: Column(
             children: [
-              Expanded(
-                flex: 245,
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-
+              Padding(
+                padding: const EdgeInsets.only(right: 8.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Padding(
-                      padding: const EdgeInsets.only(right: 8.0, bottom: 30),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          LogoSmall(),
-                          ElevatedButton(onPressed: () {}, child: Text("Skip")),
-                        ],
-                      ),
-                    ),
-
-                    SizedBox(
-                      width: MediaQuery.of(context).size.width * 0.55,
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text.rich(
-                            TextSpan(
-                              children: [
-                                titleText("Find best place to stay in "),
-                                titlePrimary("good price"),
-                              ],
-                            ),
-                          ),
-                          SizedBox(height: 12),
-                          Desc(
-                            text:
-                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed.",
-                          ),
-                        ],
-                      ),
-                    ),
+                    LogoSmall(),
+                    ElevatedButton(onPressed: () {}, child: Text("Skip")),
                   ],
+                ),
+              ),
+              Spacer(flex: 30),
+
+              Align(
+                alignment: AlignmentGeometry.centerLeft,
+                child: SizedBox(
+                  width: MediaQuery.of(context).size.width * 0.55,
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text.rich(
+                        TextSpan(
+                          children: [
+                            titleText("Find best place to stay in "),
+                            titlePrimary("good price"),
+                          ],
+                        ),
+                      ),
+                      SizedBox(height: 12),
+                      Desc(
+                        text:
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed.",
+                      ),
+                    ],
+                  ),
                 ),
               ),
               Expanded(flex: 36, child: Container()),

@@ -16,10 +16,9 @@ class Onboarding2 extends StatelessWidget {
         body: Padding(
           padding: const EdgeInsets.all(16.0),
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Padding(
-                padding: const EdgeInsets.only(right: 8.0, bottom: 30),
+                padding: const EdgeInsets.only(right: 8.0),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -28,58 +27,65 @@ class Onboarding2 extends StatelessWidget {
                   ],
                 ),
               ),
-              SizedBox(
-                width: MediaQuery.of(context).size.width * 0.65,
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text.rich(
-                      TextSpan(
-                        children: [
-                          titleText("Fast sell your property in just "),
-                          titlePrimary("one click"),
-                        ],
+              Spacer(flex: 30),
+              Align(
+                alignment: AlignmentGeometry.centerLeft,
+                child: SizedBox(
+                  width: MediaQuery.of(context).size.width * 0.65,
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text.rich(
+                        TextSpan(
+                          children: [
+                            titleText("Fast sell your property in just "),
+                            titlePrimary("one click"),
+                          ],
+                        ),
                       ),
-                    ),
-                    SizedBox(height: 12),
-                    Desc(
-                      text:
-                          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed.",
+                      SizedBox(height: 12),
+                      Desc(
+                        text:
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed.",
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              Spacer(flex: 36),
+              Expanded(
+                flex: 500,
+                child: Stack(
+                  children: [
+                    Image.asset("assets/onboarding/image2.png"),
+                    Positioned(
+                      left: 0,
+                      right: 0,
+                      bottom: MediaQuery.of(context).size.height * 0.05,
+                      child: Center(
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            BackButtonWidget(),
+                            SizedBox(width: 16),
+                            PrimaryButton(
+                              text: "Next",
+                              action: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => Onboarding3(),
+                                  ),
+                                );
+                              },
+                            ),
+                            SizedBox(width: 16),
+                          ],
+                        ),
+                      ),
                     ),
                   ],
                 ),
-              ),
-              Expanded(child: Container()),
-              Stack(
-                children: [
-                  Image.asset("assets/onboarding/image2.png"),
-                  Positioned(
-                    left: 0,
-                    right: 0,
-                    bottom: MediaQuery.of(context).size.height * 0.05,
-                    child: Center(
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          BackButtonWidget(),
-                          SizedBox(width: 16),
-                          PrimaryButton(
-                            text: "Next",
-                            action: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => Onboarding3(),
-                                ),
-                              );
-                            },
-                          ),
-                          SizedBox(width: 16),
-                        ],
-                      ),
-                    ),
-                  ),
-                ],
               ),
             ],
           ),
