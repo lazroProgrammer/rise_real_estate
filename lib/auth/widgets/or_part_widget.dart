@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:rise_real_estate/auth/widgets/login_button.dart';
+import 'package:rise_real_estate/auth/widgets/buttons/login_button.dart';
 import 'package:rise_real_estate/auth/widgets/or_divider.dart';
 
 class OrPartWidget extends StatelessWidget {

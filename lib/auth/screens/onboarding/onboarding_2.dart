@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:rise_real_estate/auth/screens/onboarding/onboarding_3.dart';
-import 'package:rise_real_estate/auth/widgets/back_button.dart';
-import 'package:rise_real_estate/auth/widgets/desc.dart';
+import 'package:rise_real_estate/auth/widgets/buttons/back_button.dart';
+import 'package:rise_real_estate/auth/widgets/buttons/primary_button.dart';
 import 'package:rise_real_estate/auth/widgets/logo_small.dart';
-import 'package:rise_real_estate/auth/widgets/primary_button.dart';
-import 'package:rise_real_estate/auth/widgets/title_text.dart';
+import 'package:rise_real_estate/auth/widgets/text/desc.dart';
+import 'package:rise_real_estate/auth/widgets/text/title_text.dart';
 
 class Onboarding2 extends StatelessWidget {
   const Onboarding2({super.key});

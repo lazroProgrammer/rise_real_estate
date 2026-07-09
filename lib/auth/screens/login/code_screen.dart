@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pinput/pinput.dart';
-import 'package:rise_real_estate/auth/widgets/title_text.dart';
+import 'package:rise_real_estate/auth/widgets/text/title_text.dart';
 
 class CodeScreen extends StatelessWidget {
   const CodeScreen({super.key});

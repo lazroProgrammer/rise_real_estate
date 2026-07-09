@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:rise_real_estate/auth/screens/login/login_screen.dart';
+import 'package:rise_real_estate/auth/widgets/buttons/primary_button.dart';
 import 'package:rise_real_estate/auth/widgets/or_part_widget.dart';
-import 'package:rise_real_estate/auth/widgets/primary_button.dart';
 import 'package:rise_real_estate/auth/widgets/register_msg.dart';
-import 'package:rise_real_estate/auth/widgets/title_text.dart';
+import 'package:rise_real_estate/auth/widgets/text/title_text.dart';
 
 class LoginIntroScreen extends StatelessWidget {
   const LoginIntroScreen({super.key});

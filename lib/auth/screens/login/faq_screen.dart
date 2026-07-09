@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:rise_real_estate/auth/widgets/desc.dart';
 import 'package:rise_real_estate/auth/widgets/faq_action.dart';
+import 'package:rise_real_estate/auth/widgets/text/desc.dart';
+import 'package:rise_real_estate/auth/widgets/text/title_text.dart';
 import 'package:rise_real_estate/auth/widgets/text_Field_styled.dart';
-import 'package:rise_real_estate/auth/widgets/title_text.dart';
 
 class FaqScreen extends StatelessWidget {
   const FaqScreen({super.key});
