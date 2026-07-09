@@ -10,6 +10,7 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_bloc: ^9.1.1
+  pinput: ^6.0.2
 
 dev_dependencies:
   flutter_test:
