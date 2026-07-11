@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pinput/pinput.dart';
+import 'package:rise_real_estate/account_setup/screens/add_location_screen.dart';
 import 'package:rise_real_estate/auth/widgets/text/title_text.dart';
 
 class CodeScreen extends StatelessWidget {
@@ -60,6 +61,13 @@ class CodeScreen extends StatelessWidget {
                         color: Colors.blueGrey.shade100,
                         borderRadius: BorderRadius.circular(16),
                       ),
+                    ),
+                    onCompleted: (value) => Navigator.pushAndRemoveUntil(
+                      context,
+                      MaterialPageRoute(
+                        builder: (_) => const AddLocationScreen(),
+                      ),
+                      (route) => false,
                     ),
                   );
                 },

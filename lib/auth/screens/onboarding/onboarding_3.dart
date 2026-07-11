@@ -72,11 +72,12 @@ class Onboarding3 extends StatelessWidget {
                             PrimaryButton(
                               text: "Next",
                               action: () {
-                                Navigator.push(
+                                Navigator.pushAndRemoveUntil(
                                   context,
                                   MaterialPageRoute(
-                                    builder: (context) => LoginIntroScreen(),
+                                    builder: (_) => const LoginIntroScreen(),
                                   ),
+                                  (route) => false,
                                 );
                               },
                             ),
