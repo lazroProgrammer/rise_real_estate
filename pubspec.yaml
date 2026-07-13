@@ -27,6 +27,10 @@ flutter:
     - assets/account_setup/
     - assets/onboarding/
     - assets/login/
+    - assets/home/
+    - assets/home/avatar/
+    - assets/home/estates/
+    - assets/home/locations/
   fonts:
     - family: Lato
       fonts:

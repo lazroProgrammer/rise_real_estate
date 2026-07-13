@@ -66,20 +66,24 @@ class Onboarding2 extends StatelessWidget {
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
+                            Spacer(flex: 32),
                             BackButtonWidget(),
                             SizedBox(width: 16),
-                            PrimaryButton(
-                              text: "Next",
-                              action: () {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                    builder: (context) => Onboarding3(),
-                                  ),
-                                );
-                              },
+                            Expanded(
+                              flex: 233,
+                              child: PrimaryButton(
+                                text: "Next",
+                                onPressed: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) => Onboarding3(),
+                                    ),
+                                  );
+                                },
+                              ),
                             ),
-                            SizedBox(width: 16),
+                            Spacer(flex: 40),
                           ],
                         ),
                       ),

@@ -36,16 +36,26 @@ class LoginScreen extends StatelessWidget {
               TextFieldStyled(text: "Email", icon: Icons.email_outlined),
               TextFieldStyled(text: "Password", icon: Icons.password_outlined),
               TermsPasswordRow(),
-              Center(
-                child: PrimaryButton(
-                  action: () {
-                    Navigator.of(context).push(
-                      MaterialPageRoute(builder: (context) => CodeScreen()),
-                    );
-                  },
-                  text: "Login",
-                ),
+              Spacer(flex: 42),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Spacer(flex: 48),
+                  Expanded(
+                    flex: 278,
+                    child: PrimaryButton(
+                      onPressed: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(builder: (context) => CodeScreen()),
+                        );
+                      },
+                      text: "Login",
+                    ),
+                  ),
+                  Spacer(flex: 48),
+                ],
               ),
+
               Spacer(flex: 112),
               OrPartWidget(),
               Spacer(flex: 92),

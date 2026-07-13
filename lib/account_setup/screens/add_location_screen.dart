@@ -4,9 +4,9 @@ import 'package:flutter/material.dart';
 import 'package:maplibre_gl/maplibre_gl.dart';
 import 'package:rise_real_estate/account_setup/screens/real_estate_type_screen.dart';
 import 'package:rise_real_estate/auth/widgets/buttons/primary_button.dart';
-import 'package:rise_real_estate/auth/widgets/search_field.dart';
 import 'package:rise_real_estate/auth/widgets/text/desc.dart';
 import 'package:rise_real_estate/auth/widgets/text/title_text.dart';
+import 'package:rise_real_estate/auth/widgets/text_Field_styled.dart';
 
 class AddLocationScreen extends StatefulWidget {
   const AddLocationScreen({super.key});
@@ -57,7 +57,7 @@ class _AddLocationScreenState extends State<AddLocationScreen> {
               Spacer(flex: 79),
               Center(
                 child: PrimaryButton(
-                  action: () {
+                  onPressed: () {
                     Navigator.of(context).push(
                       MaterialPageRoute(
                         builder: (context) => RealEstateTypeScreen(),

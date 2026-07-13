@@ -54,7 +54,7 @@ class LoginIntroScreen extends StatelessWidget {
 
               Center(
                 child: PrimaryButton(
-                  action: () {
+                  onPressed: () {
                     Navigator.of(context).push(
                       MaterialPageRoute(builder: (context) => LoginScreen()),
                     );

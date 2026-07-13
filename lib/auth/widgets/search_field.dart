@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-class TextFieldStyled extends StatelessWidget {
-  const TextFieldStyled({super.key, required this.icon, required this.text});
-  final IconData icon;
+class SearchField extends StatelessWidget {
+  const SearchField({super.key, required this.text});
+
   final String text;
   @override
   Widget build(BuildContext context) {
@@ -10,7 +10,7 @@ class TextFieldStyled extends StatelessWidget {
       padding: const EdgeInsets.all(8.0),
       child: TextField(
         decoration: InputDecoration(
-          prefixIcon: Icon(icon, color: Colors.blueGrey[800]),
+          prefixIcon: Icon(Icons.search, color: Colors.blueGrey[800]),
           hintText: text,
           contentPadding: EdgeInsets.symmetric(vertical: 20),
           border: OutlineInputBorder(),

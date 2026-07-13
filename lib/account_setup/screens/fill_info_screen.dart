@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:rise_real_estate/auth/widgets/buttons/primary_button.dart';
-import 'package:rise_real_estate/auth/widgets/search_field.dart';
 import 'package:rise_real_estate/auth/widgets/text/desc.dart';
 import 'package:rise_real_estate/auth/widgets/text/title_text.dart';
+import 'package:rise_real_estate/auth/widgets/text_Field_styled.dart';
 import 'package:rise_real_estate/home/screens/home_screen.dart';
 
 class FillInfoScreen extends StatelessWidget {
@@ -54,7 +54,7 @@ class FillInfoScreen extends StatelessWidget {
 
               Center(
                 child: PrimaryButton(
-                  action: () {
+                  onPressed: () {
                     Navigator.pushAndRemoveUntil(
                       context,
                       MaterialPageRoute(builder: (_) => const HomeScreen()),

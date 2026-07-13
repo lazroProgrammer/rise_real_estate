@@ -40,7 +40,7 @@ class PaymentMethodScreen extends StatelessWidget {
               Spacer(flex: 79),
               Center(
                 child: PrimaryButton(
-                  action: () {
+                  onPressed: () {
                     Navigator.of(context).push(
                       MaterialPageRoute(builder: (context) => FillInfoScreen()),
                     );

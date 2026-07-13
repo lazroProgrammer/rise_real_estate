@@ -36,7 +36,7 @@ class RegisterScreen extends StatelessWidget {
               TermsPasswordRow(),
               Spacer(flex: 24),
               Center(
-                child: PrimaryButton(action: () {}, text: "Register"),
+                child: PrimaryButton(onPressed: () {}, text: "Register"),
               ),
               Spacer(flex: 232),
             ],

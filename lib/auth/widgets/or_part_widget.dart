@@ -15,8 +15,8 @@ class OrPartWidget extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           spacing: 10,
           children: [
-            LoginButton(type: "google"),
-            LoginButton(type: "facebook"),
+            Expanded(child: LoginButton(type: "google")),
+            Expanded(child: LoginButton(type: "facebook")),
           ],
         ),
         SizedBox(height: 30),

@@ -83,7 +83,7 @@ class RealEstateTypeScreen extends StatelessWidget {
               ),
               Center(
                 child: PrimaryButton(
-                  action: () {
+                  onPressed: () {
                     Navigator.of(context).push(
                       MaterialPageRoute(
                         builder: (context) => PaymentMethodScreen(),

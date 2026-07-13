@@ -65,16 +65,26 @@ class Onboarding1 extends StatelessWidget {
                       right: 0,
                       bottom: MediaQuery.of(context).size.height * 0.05,
                       child: Center(
-                        child: PrimaryButton(
-                          text: "Next",
-                          action: () {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) => Onboarding2(),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Spacer(flex: 93),
+                            Expanded(
+                              flex: 190,
+                              child: PrimaryButton(
+                                text: "Next",
+                                onPressed: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) => Onboarding2(),
+                                    ),
+                                  );
+                                },
                               ),
-                            );
-                          },
+                            ),
+                            Spacer(flex: 93),
+                          ],
                         ),
                       ),
                     ),

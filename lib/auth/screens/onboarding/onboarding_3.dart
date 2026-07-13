@@ -67,21 +67,25 @@ class Onboarding3 extends StatelessWidget {
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
+                            Spacer(flex: 32),
                             BackButtonWidget(),
                             SizedBox(width: 16),
-                            PrimaryButton(
-                              text: "Next",
-                              action: () {
-                                Navigator.pushAndRemoveUntil(
-                                  context,
-                                  MaterialPageRoute(
-                                    builder: (_) => const LoginIntroScreen(),
-                                  ),
-                                  (route) => false,
-                                );
-                              },
+                            Expanded(
+                              flex: 233,
+                              child: PrimaryButton(
+                                text: "Next",
+                                onPressed: () {
+                                  Navigator.pushAndRemoveUntil(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (_) => const LoginIntroScreen(),
+                                    ),
+                                    (route) => false,
+                                  );
+                                },
+                              ),
                             ),
-                            SizedBox(width: 16),
+                            Spacer(flex: 40),
                           ],
                         ),
                       ),
