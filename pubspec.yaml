@@ -31,6 +31,7 @@ flutter:
     - assets/home/avatar/
     - assets/home/estates/
     - assets/home/locations/
+    - assets/home/featured/
   fonts:
     - family: Lato
       fonts:

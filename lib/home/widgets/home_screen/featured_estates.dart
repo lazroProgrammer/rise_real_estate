@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:rise_real_estate/home/screens/featured_estates_screen.dart';
 import 'package:rise_real_estate/home/widgets/featured_estate.dart';
 import 'package:rise_real_estate/home/widgets/section_row.dart';
 
@@ -14,7 +15,13 @@ class FeaturedEstates extends StatelessWidget {
           text: "Featured Estates",
 
           buttonText: "View all",
-          onPressed: () {},
+          onPressed: () {
+            Navigator.of(context).push(
+              MaterialPageRoute(
+                builder: (context) => const FeaturedEstatesScreen(),
+              ),
+            );
+          },
         ),
         SizedBox(height: 20),
         FeaturedEstate(),

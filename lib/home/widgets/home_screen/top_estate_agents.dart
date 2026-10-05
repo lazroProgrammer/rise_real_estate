@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:rise_real_estate/home/screens/top_estate_agents_screen.dart';
 import 'package:rise_real_estate/home/widgets/estate_agent.dart';
 import 'package:rise_real_estate/home/widgets/section_row.dart';
 
@@ -14,7 +15,13 @@ class TopEstateAgents extends StatelessWidget {
           text: "Top Estate Agent",
 
           buttonText: "Explore",
-          onPressed: () {},
+          onPressed: () {
+            Navigator.of(context).push(
+              MaterialPageRoute(
+                builder: (context) => const TopEstateAgentsScreen(),
+              ),
+            );
+          },
         ),
         SizedBox(height: 20),
 
