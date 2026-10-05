@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:rise_real_estate/auth/screens/onboarding/intro_screen.dart';
+import 'package:rise_real_estate/features/auth/screens/onboarding/intro_screen.dart';
 
 void main() {
   runApp(const MainApp());
